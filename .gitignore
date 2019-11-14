@@ -1,0 +1,19 @@
+.idea
+.vagrant
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+
+# terraform
+terraform.tfvars
+terraform.tfstate*
+.terraform*
+terraform_11/terraform.tfstate*
+terraform_11/terraform.tfvars
+terraform_11/.terraform
+terraform_12/terraform.tfstate*
+terraform_12/terraform.tfvars
+terraform_12/.terraform
