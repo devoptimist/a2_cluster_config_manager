@@ -1,9 +1,9 @@
-a2_cluster_ssh_key = "~/.ssh/aws_key"
-a2_cluster_ssh_user = "centos"
-a2_cluster_sudo_pass = "mysudopass"
+existing_ssh_user = "~/.ssh/aws_key"
+existing_ssh_user_sudo_password = "centos"
+existing_ssh_key_file = "mysudopass"
 
 existing_chef_server_ips = ["","",""]
 existing_automate_ips = ["","",""]
 
-chef_server_config_file = "/tmp/my_chef_config"
-automate_config = "/tmp/my_automate_config"
+chef_server_config_file = "/tmp/my_chef_config.toml"
+automate_config_file = "/tmp/my_automate_config.toml"
