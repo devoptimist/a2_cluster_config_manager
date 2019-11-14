@@ -40,9 +40,9 @@ automate_config = "/tmp/my_automate_config"
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|----------|
-|a2_cluster_ssh_user|The user name to use for ssh connections|string||yes|
-|a2_cluster_ssh_key|The path to an ssh private key to use for ssh connections|string||yes|
-|a2_cluster_sudo_pass|Password for sudo elevation if the ssh user needs it|string|""|no|
+|existing_ssh_user|The user name to use for ssh connections|string||yes|
+|existing_ssh_user_sudo_password|The path to an ssh private key to use for ssh connections|string||yes|
+|existing_ssh_key_file|Password for sudo elevation if the ssh user needs it|string|""|no|
 |existing_chef_server_ips|A list containing the ip addresses of the chef server frontends|list||yes|
 |existing_automate_ips|A list containing the ip addresses of the automate frontends|list||yes|
 |chef_server_config_file|The path to a file containing the chef server toml config |string||yes|
