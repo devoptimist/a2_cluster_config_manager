@@ -1,5 +1,5 @@
 # Overview
-This terraform code can help yopu manage your automate cluster frontend configuration.
+This terraform code can help you manage your automate cluster frontend configuration.
 
 #### Supported platforms:
  * Linux
