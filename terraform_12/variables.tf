@@ -10,12 +10,12 @@ variable "existing_automate_ips" {
   type        = list
 }
 
-variable "a2_cluster_ssh_user" {
+variable "existing_ssh_user" {
   description = "The user name to use for ssh connections"
   type        = string
 }
 
-variable "a2_cluster_ssh_key" {
+variable "existing_ssh_key_file" {
   description = "The path to an ssh private key to use for ssh connections"
   type        = string
 }
@@ -30,7 +30,7 @@ variable "automate_config_file" {
   type        = string
 }
 
-variable "a2_cluster_sudo_pass" {
+variable "existing_ssh_user_sudo_password" {
   description = "Password for sudo elevation if the ssh user needs it"
   type        = string
   default     = "" # can be left blank if root user or passwordless sudo 

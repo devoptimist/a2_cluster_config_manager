@@ -1,5 +1,5 @@
 locals {
-  instance_count = count(var.ips)
+  instance_count = length(var.ips)
   tmp_path       = "${var.tmp_path}/config_patch"
   config         = var.config_file
 }
@@ -31,7 +31,7 @@ resource "null_resource" "config_patch" {
 
   provisioner "remote-exec" {
     inline = [
-      "echo ${var.a2_cluster_sudo_pass} | sudo -S chef-automate config patch ${local.tmp_path}/config.toml"
+      "echo ${var.sudo_pass} | sudo -S chef-automate config patch ${local.tmp_path}/config.toml"
     ]
   }
 }

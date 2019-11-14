@@ -1,5 +1,5 @@
 locals {
-  instance_count = "${count(var.ips)}"
+  instance_count = "${length(var.ips)}"
   tmp_path       = "${var.tmp_path}/config_patch"
   config         = "${var.config_file}"
 }
