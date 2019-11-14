@@ -48,6 +48,27 @@ automate_config = "/tmp/my_automate_config"
 |chef_server_config_file|The path to a file containing the chef server toml config |string||yes|
 |automate_config_file|The path to a file containing the automate toml config |string||yes|
 
+### Output
+After the terrafrom has finished runnig you should see the config that was applied as output
+
+## Config File examples
+
+### Chef Server Config
+
+``` toml 
+[erchef.v1.sys.api]
+  max_request_size = 4000000
+```
+
+### Automate Server Config
+
+``` toml
+ [ingest.v1.sys.service]
+  max_number_of_bundled_run_msgs = 200
+  max_number_of_bundled_action_msgs = 200
+  number_of_run_msg_publishers = 5
+```
+
 ## Running
 Once you have configured your input variables into the `terraform.tfvars` file, run the follwoing commands to apply your config to the cluster frontends:
 ``` bash
